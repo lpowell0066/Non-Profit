@@ -2,60 +2,97 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Louisville Urban League</title>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body>
   <header>
-    <img src="images/LOGO.png" alt="Louisville Urban League">
+    <img src="LOGO.png" class="logo" alt="Louisville Urban League">
   </header>
    <nav id="navbar">
 
          <ul>
-           <li><a href="#">Home</a><li>
-           <li><a href="#">About</a><li>
-           <li><a href="#">Services</a><li>
-           <li><a href="#">Contact Us</a><li>
+           <li><a href="#">Home &nbsp;| </a></li>
+           <li><a href="#">About &nbsp;| </a></li>
+           <li><a href="#">Services &nbsp;| </a></li>
+           <li><a href="#">Contact Us </a></li>
         </ul>
 
   </nav>
      <section id="showcase">
 
-       <div class="container">
-
-       </div>
+  <img src="homepage.jpg" class="group" alt="Louisville Urban League Group Photo">
      </section>
      <div class="container">
 
-      <div class="box-1">
+      <div class="about">
         <h2>About Us</h2>
-        <p>The National Urban League is a historic civil rights organization dedicated to economic empowerment in order to elevate the standard of living in historically underserved urban communities.</p>
+        <p>THE LOUISVILLE URBAN LEAGUE is a nonprofit, nonpartisan, community service organization dedicated to eliminating racism and its adverse impacts on our community. Our mission is to assist African Americans and other marginalized populations in attaining social and economic equality through direct services and advocacy.</p>
+
+        <p>As part of a broader National Urban League network of historic civil rights organizations throughout the United States, the Louisville Urban League, like all affiliates, is dedicated to fostering economic empowerment in order to elevate the standard of living in historically underserved urban communities, with our focus on Jobs, Justice, Education, Health and Housing. testing</p>
+
+       <p>Currently the Louisville Urban League’s service area includes the Kentucky counties of Jefferson, Shelby, Oldham, Bullitt and Hardin; and the Indiana counties of Floyd, Harrison and Clark.</p>
       </div>
-      <div class="box-2">
+      <div class="services">
+        <img src ="services.jpg" class="services" alt="Louisville Urban League Services">
         <h2>Services</h2>
-          <li>Education</li>
-          <li>Jobs</li>
-          <li>Entrepreneurship</li>
-          <li>Housing</li>
-          <li>Health</li>
-          <li>Justice</li>
-          <li>Voting & Civic Engagement</li>
-          <li>State of Black America
-          Advocacy, Policy, Legislation, Research</li>
+        <p>As an active partner, leader and catalyst the Louisville Urban League assist African Americans and other marginalized people attain social and economic equality and stability through direct services and advocacy.</p>
+
+        <p>The Louisville Urban League serves over 12,000 individuals annually through direct services and extended collaborations providing families throughout the community with opportunities to achieve economic stability.</p>
+
+        <p>The $2.28 million of support received from government, businesses, and individuals resulted in an estimated $18 million impact, which is more than a 789% return.</p>
+
+        <p> The League provides direct services in the areas of Workforce Development, Housing & Financial Empowerment, and Youth Development & Education.</p>
       </div>
 
 
-    <aside id="sidebar">
-      <p>DONATE<p>
+
+    <div class="contact"> <h3>Contact Us<h3>
+    <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="" style=""></textarea>
+    <input type="submit" value="Submit">
+    </form>
+   </div>
+
+    <div class="donate">
+      <img src="donate.jpg" class="donate-image" alt="Louisville Urban League Donate Photo">
+      <!--comment https://www.vecteezy.com/vector-art/165543-charity-icons-with-duotone-colors-vectors-->
+      <div> <h2>Donate</h2>
+      		<p>Last year because of the League, 512 men and women were placed in jobs, 435 individuals were given a second chance at life through the Reily Reentry Project, 370 youth benefitted from our educational programming, more than 2,300 barriers that we take for granted, such as transportation and hunger, were removed, and 85 families purchased their first home. Our work matters. Your gift matters. Thank you for supporting the League.</p>
+
+              <p>If you wish to support the League’s general fund, which supports overall programming and operations, please select General Donation from the drop down menu below.</p>
+              <button class="donate-button1">DONATE</button>
+
+      		<p>If you wish to contribute to our COVID-19 relief fund, which will assist families disproportionately affected by the pandemic with rent and utility assistance, and other basic needs, please select COVID-19 relief fund from the drop down menu below.</p></div>
+          <button class="donate-button2">DONATE</button>
+
+
+    </div>
+
+
 
     </aside>
   </div><!--comment-->
 
-  <footer id="main-footer">
+  <footer>
+	<a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
     <p>Copyright &copy; 2020 Louisville Urban League</p>
+
+
     </footer>
 </body>
 </html>
