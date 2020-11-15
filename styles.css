@@ -6,81 +6,12 @@ body{
   line-height:1.6em;
   margin:0;
 }
+* {box-sizing: border-box;}
+
 img{
 	max-width: 100%;
 }
-.group {
-	width: 100%!important;
-}
-.container{
-   width: 90%;
-   margin: auto;
 
-
-}
-.container::after{
-  display:table;
-  content: "";
-  clear: both;
-}
-.services,#sidebar{
-  float: left;
-  margin: 1%;
-  width: 30%;
-}
-.about{
-  float:left;
-  background:white;
-  text-align: center;
-  color:black;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-
-}
-.services{
-  float:left;
-  background:white;
-  text-align: center;
-  color:black;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-{font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: red;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-.contact{
-  color: black;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  margin: 5px;
-  padding: 5px;
-}
 
 header{
   background-color:white;
@@ -128,34 +59,49 @@ header{
   line-height: 1.6em;
   padding-top: 30px;
 }
-
-#main{
-  float: left;
-  width: 70px;
-  padding:0 30px;
-  box-sizing: border-box;
+.group {
+	width: 100%!important;
 }
-  .donate{
+.container{
+   width: 90%;
+   margin: auto;
+}
+.container::after{
+  display:table;
+  content: "";
+  clear: both;
+}
+.about{
+  background:white;
+  text-align: center;
+  color:black;
+  padding: 15px;
+  margin-bottom:15px;
+}
 
-    float: right;
+.services,.donate{
+  float: left;
+  width: 49%;
+  margin-bottom: 15px;
+}
+.services{
+    margin-right:2%;
+  background:white;
+  text-align: center;
+  color:black;
+  padding: 15px;
+}
+
+.donate{
     background:white;
     text-align: center;
     color: black;
-    padding-top: 5px;
-	  padding-left: 5px;
-    padding-right: 5px;
-
-
-  }
-  .services{
-    width:100%;
-    padding: 5px;
-
-  }
-  .donate-image{
+    padding: 15px;
+}
+.donate-image{
     padding-top: 15px;
-  }
-  .donate-button1{
+}
+.donate-button1{
     font-family:Arial, Helvetica, sans-serif;
     color: red;
     text-align: center;
@@ -174,6 +120,36 @@ header{
   cursor: pointer;
   margin:2px 0 15px 0;
 }
+.contact{
+  color: black;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 5px;
+  padding: 5px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
 
 footer{
 	background: red;
@@ -185,18 +161,16 @@ footer{
 footer p{
 	padding: 5px;
 	color:white;
-	margin-top: .5px;
-
-
 
 }
 .fa {
+    display: inline;
   padding: 15px;
   font-size: 15px;
   width: 15px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 15px 2px;
   border-radius: 100%;
 }
 
@@ -225,15 +199,12 @@ footer p{
 }
 
   @media(max-width:600px){
-    #main{
+
+    .services, .donate{
       width: 100%;
       float: none;
     }
-    #sidebar, .box-1, .box-2{
-      width: 100%;
-      float: none;
-    }
-	  .box-2{
+	  .services{
 		  margin-bottom: 10px;
 	  }
   }
