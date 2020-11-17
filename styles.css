@@ -6,12 +6,81 @@ body{
   line-height:1.6em;
   margin:0;
 }
-* {box-sizing: border-box;}
-
 img{
 	max-width: 100%;
 }
+.group {
+	width: 100%!important;
+}
+.container{
+   width: 90%;
+   margin: auto;
 
+
+}
+.container::after{
+  display:table;
+  content: "";
+  clear: both;
+}
+.services,#sidebar{
+  float: left;
+  margin: 1%;
+  width: 30%;
+}
+.about{
+  float:left;
+  background:white;
+  text-align: center;
+  color:black;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+
+}
+.services{
+  float:left;
+  background:white;
+  text-align: center;
+  color:black;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+{font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.contact{
+  color: black;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 5px;
+  padding: 5px;
+}
 
 header{
   background-color:white;
@@ -59,49 +128,34 @@ header{
   line-height: 1.6em;
   padding-top: 30px;
 }
-.group {
-	width: 100%!important;
-}
-.container{
-   width: 90%;
-   margin: auto;
-}
-.container::after{
-  display:table;
-  content: "";
-  clear: both;
-}
-.about{
-  background:white;
-  text-align: center;
-  color:black;
-  padding: 15px;
-  margin-bottom:15px;
-}
 
-.services,.donate{
+#main{
   float: left;
-  width: 49%;
-  margin-bottom: 15px;
+  width: 70px;
+  padding:0 30px;
+  box-sizing: border-box;
 }
-.services{
-    margin-right:2%;
-  background:white;
-  text-align: center;
-  color:black;
-  padding: 15px;
-}
+  .donate{
 
-.donate{
+    float: right;
     background:white;
     text-align: center;
     color: black;
-    padding: 15px;
-}
-.donate-image{
+    padding-top: 5px;
+	  padding-left: 5px;
+    padding-right: 5px;
+
+
+  }
+  .services{
+    width:100%;
+    padding: 5px;
+
+  }
+  .donate-image{
     padding-top: 15px;
-}
-.donate-button1{
+  }
+  .donate-button1{
     font-family:Arial, Helvetica, sans-serif;
     color: red;
     text-align: center;
@@ -120,36 +174,177 @@ header{
   cursor: pointer;
   margin:2px 0 15px 0;
 }
-.contact{
-  color: black;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  margin: 5px;
-  padding: 5px;
+
+.column {
+  float: left;
+  width: 33.33%;
 }
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.Scholarships{
+  float: right;
+}
+
+
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
 }
 
-input[type=submit] {
-  background-color: red;
-  color: white;
-  padding: 12px 20px;
-  border: none;
+body {
+  font-family: Arial, Helvetica, sans-serif
+  margin: 0;
+  background: #fff;
+  color: #999;
+}
+
+a {
+  text-decoration: none;
+  margin: 1rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif
+  font-weight: 600;
+  color: #333;
+  font-size: 1.825rem;
+  margin: 1.3rem 0;
+}
+
+.section-lead {
+  max-width: 600px;
+  margin: 1rem auto 1.5rem;
+
+}
+
+.service a {
+  color: #5b7abb;
+  display: block;
+}
+
+.service h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #56ceba;
+  font-size: 1.3rem;
+  margin: 1rem 0 0.6rem;
+}
+
+.services-grid {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.service {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
   border-radius: 4px;
-  cursor: pointer;
+  text-align: center;
+  -webkit-box-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #e7e7e7;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+.service:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
 }
+
+.service i {
+  font-size: 3.45rem;
+  margin: 1rem 0;
+}
+
+.service1 i,
+.service1 h4,
+.service1 .cta {
+  color: black;
+}
+
+.service1:hover {
+  border: 2px solid red;
+}
+
+.service2 i,
+.service2 h4,
+.service2 .cta {
+  color: black;
+}
+
+.service2:hover {
+  border: 2px solid red;
+}
+
+.service3 i,
+.service3 h4,
+.service3 .cta {
+  color: black;
+}
+
+.service3:hover {
+  border: 2px solid red;
+}
+
+.service .cta span {
+  font-size: 0.6rem;
+}
+
+.service > * {
+  flex: 1 1 100%;
+}
+
+.service .cta {
+  align-self: flex-end;
+}
+
+@media all and (max-width:900px) {
+  .services-grid {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+}
+
 
 footer{
 	background: red;
@@ -161,16 +356,18 @@ footer{
 footer p{
 	padding: 5px;
 	color:white;
+	margin-top: .5px;
+
+
 
 }
 .fa {
-    display: inline;
   padding: 15px;
   font-size: 15px;
   width: 15px;
   text-align: center;
   text-decoration: none;
-  margin: 15px 2px;
+  margin: 5px 2px;
   border-radius: 100%;
 }
 
@@ -197,14 +394,27 @@ footer p{
   background: black;
   color: white;
 }
+.sectionTitle{
+  width:300px
+  position: relative;
+  padding: 10px 0;}
+
+  @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
 
   @media(max-width:600px){
-
-    .services, .donate{
+    #main{
       width: 100%;
       float: none;
     }
-	  .services{
+    #sidebar, .box-1, .box-2{
+      width: 100%;
+      float: none;
+    }
+	  .box-2{
 		  margin-bottom: 10px;
 	  }
   }
