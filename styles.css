@@ -76,9 +76,9 @@ input[type=submit]:hover {
 .contact{
   color: black;
   border-radius: 5px;
-  background-color: #f2f2f2;
   margin: 5px;
   padding: 5px;
+  text-align: left;
 }
 
 header{
@@ -146,7 +146,7 @@ header{
 
 
   }
- 
+
   .donate-image{
     padding-top: 15px;
   }
