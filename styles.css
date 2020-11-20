@@ -118,7 +118,7 @@ header{
 
 #showcase{
   margin-bottom:30px;
-  text-align:center;
+  text-align:center;;
 }
 
 #showcase h1{
@@ -218,7 +218,7 @@ section {
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
-  padding: 30px;
+  padding: 0px;
 }
 
 h3 {
@@ -297,6 +297,7 @@ h3 {
 .service2 h4,
 .service2 .cta {
   color: black;
+
 }
 
 .service2:hover {
@@ -323,6 +324,15 @@ h3 {
 
 .service .cta {
   align-self: flex-end;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 
 @media all and (max-width:900px) {
@@ -351,37 +361,46 @@ footer p{
 
 
 }
-.fa {
-  padding: 15px;
-  font-size: 15px;
-  width: 15px;
+.follow{
+  display:table-row-group;
   text-align: center;
+
+}
+.fa {
+  padding:10px;
+  font-size: 5x;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 10px 4px;
   border-radius: 100%;
 }
+
 
 .fa:hover {
     opacity: 0.7;
 }
 
 .fa-facebook {
-  background: black;
+  background: red;
   color: white;
 }
 
 .fa-twitter {
-  background: black;
+  background: red;
+  color: white;
+}
+
+.fa-google {
+  background: red;
   color: white;
 }
 
 .fa-youtube {
-  background: black;
+  background: red;
   color: white;
 }
 
 .fa-instagram {
-  background: black;
+  background: red;
   color: white;
 }
 .sectionTitle{
